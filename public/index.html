@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LAYOUT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Cabeçalho {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.911);
+
+
+        }
+
+        .Linha1 {
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.562);
+
+        }
+
+        .Linha2 {
+            width: 100%;
+            height: 640px;
+            background-color: white;
+            
+
+
+        }
+
+        .Linha3 {
+            width: 100%;
+            height: 550px;
+            background-color: white;
+
+        }
+
+        .separar {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+
+        }
+
+        .Linha4 {
+            width: 100%;
+            height: 550px;
+            background-color: white;
+
+        }
+
+        .separar {
+            width: 100%;
+            height: 40px;
+            background-color: white;
+
+        }
+
+        .Linha5 {
+            width: 100%;
+            height: 550px;
+            background-color: white;
+
+        }
+
+        .Rodapé {
+            width: 100%;
+            height: 40px;
+        }
+
+        .esferasLeft {
+            width: 140px;
+            height: 140px;
+            background-color: #5A5A5A;
+            border-radius: 100%;
+            float: left;
+            margin:100px;
+
+        }
+         .esferasCentro {
+            width: 140px;
+            height: 140px;
+            background-color: #5A5A5A;
+            border-radius: 100%;
+            float: right;
+            margin:100px;
+
+            
+            
+        }
+
+        .esferasRight {
+            width: 140px;
+            height: 140px;
+            background-color: #5A5A5A;
+            border-radius: 100%;
+            float: right;
+            margin:100px auto;
+            
+        }
+
+       
+
+
+
+        .quadradoRight {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.103);
+            float: right;
+            clear: both;
+            margin:100px;
+        }
+
+        .quadradoLeft {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.103);
+            float: left;
+            clear: both;
+            margin:100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class='Cabeçalho'></div>
+        <div class='Linha1'></div>
+        <div class='Linha2'>
+            <div class="sub-linha">
+                <div class="esferasLeft"></div>
+                <div class="esferasCentro"></div>
+                <div class="esferasRight"></div>
+            </div>
+        </div>
+        <div class='Linha3'>
+            <div class='quadrado e escrita'>
+                <dive class='quadradoRight'></dive>
+                <dive class='escrita'></dive>
+            </div>
+        </div>
+        <div class='Linha4'>
+            <div class="quadrado e escrita">
+                <dive class="quadradoLeft"></dive>
+                <dive class="escrita"></dive>
+            </div>
+        </div>
+        <div class='Linha5'>
+            <div class='quadrado e escrita'>
+                <dive class='quadradoRight'></dive>
+                <dive class='escrita'></dive>
+            </div>
+
+        </div>
+        <div class='Rodape'></div>
+    </div>
+</body>
+
+</html>
