@@ -12,6 +12,11 @@
             box-sizing: border-box;
         }
 
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+        }
+
         .Cabeçalho {
             width: 100%;
             height: 50px;
@@ -31,7 +36,7 @@
             width: 100%;
             height: 640px;
             background-color: white;
-            
+
 
 
         }
@@ -57,13 +62,6 @@
 
         }
 
-        .separar {
-            width: 100%;
-            height: 40px;
-            background-color: white;
-
-        }
-
         .Linha5 {
             width: 100%;
             height: 550px;
@@ -71,62 +69,77 @@
 
         }
 
+        .sub-linha {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .card {
+            width: 310px;
+            margin: 5px;
+            text-align: center;
+            float: left;
+        }
+
+        .esferas {
+            width: 140px;
+            height: 140px;
+            background-color: #5A5A5A;
+            border-radius: 50%;
+            margin: 10px auto;
+
+        }
+
+        .card h3,
+        .card p {
+            text-align: center;
+        }
+
+        .card button {
+            display: inline-block;
+            padding: 5px;
+            min-width: 150px;
+            height: 25px;
+            text-align: center;
+            color: #fff;
+            border: none;
+            background-color: #777777;
+            border-radius: 5px;
+
+        }
+
+        .division {
+            width: 100%;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.103);
+            height: 1px;
+            margin: 20px 0;
+
+        }
+
+        .info {
+            float: left;
+            width: 440px;
+            margin: 20px;
+            padding: 120px 5px;
+        }
+
+        .quadrado {
+            width: 500px;
+            height: 500px;
+            background-color: rgba(0, 0, 0, 0.103);
+            float: left;
+            margin: 50px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 500px;
+
+
+        }
+
         .Rodapé {
             width: 100%;
             height: 40px;
-        }
-
-        .esferasLeft {
-            width: 140px;
-            height: 140px;
-            background-color: #5A5A5A;
-            border-radius: 100%;
-            float: left;
-            margin:100px;
-
-        }
-         .esferasCentro {
-            width: 140px;
-            height: 140px;
-            background-color: #5A5A5A;
-            border-radius: 100%;
-            float: right;
-            margin:100px;
-
-            
-            
-        }
-
-        .esferasRight {
-            width: 140px;
-            height: 140px;
-            background-color: #5A5A5A;
-            border-radius: 100%;
-            float: right;
-            margin:100px auto;
-            
-        }
-
-       
-
-
-
-        .quadradoRight {
-            width: 500px;
-            height: 500px;
-            background-color: rgba(0, 0, 0, 0.103);
-            float: right;
-            clear: both;
-            margin:100px;
-        }
-
-        .quadradoLeft {
-            width: 500px;
-            height: 500px;
-            background-color: rgba(0, 0, 0, 0.103);
-            float: left;
-            clear: both;
-            margin:100px;
         }
     </style>
 </head>
@@ -137,31 +150,82 @@
         <div class='Linha1'></div>
         <div class='Linha2'>
             <div class="sub-linha">
-                <div class="esferasLeft"></div>
-                <div class="esferasCentro"></div>
-                <div class="esferasRight"></div>
+                <div class="row">
+                    <div class="card">
+                        <div class="esferas"></div>
+                        <h3>Heading</h3>
+                        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
+                            ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                            Praesent commodo cursus magna.</p>
+                        <button> View details >></button>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="esferas"></div>
+                        <h3>Heading</h3>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+                            elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus
+                            commodo, tortor mauris condimentum nibh.</p>
+                        <button> View details >></button>
+                    </div>
+                    <div class="card">
+                        <div class="esferas"></div>
+                        <h3>Heading</h3>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum
+                            id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                            condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </p>
+                        <button> View details >></button>
+                    </div>
+                </div>
             </div>
+            <hr class=division>
+            </hr>
         </div>
         <div class='Linha3'>
-            <div class='quadrado e escrita'>
-                <dive class='quadradoRight'></dive>
-                <dive class='escrita'></dive>
+            <div class='info'>
+                <h1>First featurette heading. It'll blow your mind.</h1>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                    commodo</p>
+            </div>
+            <div class="quadrado">
+                500 x 500
+
             </div>
         </div>
-        <div class='Linha4'>
-            <div class="quadrado e escrita">
-                <dive class="quadradoLeft"></dive>
-                <dive class="escrita"></dive>
-            </div>
-        </div>
-        <div class='Linha5'>
-            <div class='quadrado e escrita'>
-                <dive class='quadradoRight'></dive>
-                <dive class='escrita'></dive>
-            </div>
+    </div>
+    <div class='Linha4'>
+        <div class="quadrado">
+            500 x 500
 
         </div>
-        <div class='Rodape'></div>
+        <div class='info'>
+            <h1>First featurette heading. It'll blow your mind.</h1>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo
+            </p>
+        </div>
+    </div>
+    <hr class="division">
+    <hr>
+    <div class='Linha5'>
+        <div class="row">
+            <div class='info'>
+                <h1>First featurette heading. It'll blow your mind.</h1>
+                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+                    Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                    commodo</p>
+            </div>
+            <div class="quadrado">
+                500 x 500
+
+            </div>
+        </div>
+
+    </div>
+    <div class='Rodape'></div>
     </div>
 </body>
 
